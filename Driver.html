@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container" id="formname">
+    <h1 style="background: linear-gradient(67deg, rgba(187,196,209,1) 1%, rgba(116,121,129,1) 49%, rgb(214, 196, 196) 100%); border-radius: 20px;">Vehicle Registration Form</h1>
+    <form class = "vehicleform" id="driver-info" action="connect2.php" method="post">
+        <h2>Driver Information</h2>
+        <div class="form-group">
+          <label for="driver-name"><i class="fa fa-user"></i> Please Enter Vehicle Number:</label>
+          <input type="text" id="driver-name" name="vehiclenumber" required />
+        </div>
+        <div class="form-group">
+          <label for="driver-name"><i class="fa fa-user"></i> Driver Name:</label>
+          <input type="text" id="driver-name" name="driver-name" required />
+        </div>
+        <div class="form-group">
+          <label for="driver-age"><i class="fa fa-birthday-cake"></i> Driver Age:</label>
+          <input type="number" id="driver-age" name="driver-age" required />
+        </div>
+        <div class="form-group">
+          <label for="driver-email"><i class="fa fa-envelope"></i> Driver Email:</label>
+          <input type="email" id="driver-email" name="driver-email" required />
+        </div>
+        <button type="button" id="prev2" style="margin-bottom: 20px; margin-right: -20px;">Previous</button>
+        <button type="submit" style="margin-right: -20px;">Submit</button>
+      </form>
+</body>
+</html>

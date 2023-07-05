@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Vehicle Registration Form</title>
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- <nav>
+    <ul>
+      <li><a href="#vehicle-info">Vehicle Info</a></li>
+      <li><a href="#driver-info">Driver Info</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav> -->
+  
+  <div class="container" id="formname">
+    <h1 style="background: linear-gradient(67deg, rgba(187,196,209,1) 1%, rgba(116,121,129,1) 49%, rgb(214, 196, 196) 100%); border-radius: 20px;">Vehicle Registration Form</h1>
+    <form class = "vehicleform" id="vehicle-info" action="connect.php" method="post">
+      <h2>Vehicle Information</h2>
+      <div class="form-group">
+        <label for="vehicle-number"><i class="fa fa-car"></i> Vehicle Number:</label>
+        <input type="text" id="vehicle-number" name="vehicle-number" required />
+      </div>
+      <div class="form-group">
+        <label for="vehicle-model"><i class="fa fa-car"></i> Vehicle Model:</label>
+        <input type="text" id="vehicle-model" name="vehicle-model" required />
+      </div>
+      <div class="form-group">
+        <label for="vehicle-year"><i class="fa fa-calendar"></i> Vehicle Year:</label>
+        <input type="number" id="vehicle-year" name="vehicle-year" required />
+      </div>
+      <div class="form-group">
+        <label for="vehicle-color"><i class="fa fa-paint-brush"></i> Vehicle Color:</label>
+        <input type="text" id="vehicle-color" name="vehicle-color" required />
+      </div>
+      <button type="submit" id="next1" style="margin-top: 20px; margin-right: -20px;">Next</button>
+    </form>
+    <!-- <form id="driver-info" action="connect2.php" method="post">
+      <h2>Driver Information</h2>
+      <div class="form-group">
+        <label for="driver-name"><i class="fa fa-user"></i> Driver Name:</label>
+        <input type="text" id="driver-name" name="driver-name" required />
+      </div>
+      <div class="form-group">
+        <label for= "driver-age"><i class="fa fa-birthday-cake"></i> Driver Age:</label>
+        <input type="number" id="driver-age" name="driver-age" required />
+      </div>
+      <div class="form-group">
+        <label for="driver-email"><i class="fa fa-envelope"></i> Driver Email:</label>
+        <input type="email" id="driver-email" name="driver-email" required />
+      </div>
+      <button type="button" id="prev2">Previous</button>
+      <button type="submit">Submit</button>
+    </form>
+  </div> -->
+  <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
+  <!-- <script>
+    var vehicleForm = document.getElementById("vehicle-info");
+    var driverForm = document.getElementById("driver-info");
+    var next1 = document.getElementById("next1");
+    var prev2 = document.getElementById("prev2");
+
+    driverForm.style.display = "none"; // hide driver-info form by default
+
+    next1.onclick = function () {
+      vehicleForm.style.display = "none";
+      driverForm.style.display = "block";
+    };
+
+    prev2.onclick = function () {
+      vehicleForm.style.display = "block";
+      driverForm.style.display = "none";
+    };
+  </script> -->
+  <!-- <script>
+    history.pushState({}, null, "Driver.html");
+  </script> -->
+</body>
+
+</html>
